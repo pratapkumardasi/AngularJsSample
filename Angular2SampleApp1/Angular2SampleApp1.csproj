@@ -98,6 +98,7 @@
   <ItemGroup>
     <Content Include="app\about\about.component.html" />
     <Content Include="app\app.component.html" />
+    <Content Include="app\employee\employeeadd.component.html" />
     <Content Include="app\home\home.component.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -126,6 +127,8 @@
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.route.ts" />
+    <TypeScriptCompile Include="app\employee\employee.model.ts" />
+    <TypeScriptCompile Include="app\employee\employeeadd.component.ts" />
     <TypeScriptCompile Include="app\home\home.component.ts" />
     <TypeScriptCompile Include="app\home\homedataservice.ts" />
     <TypeScriptCompile Include="app\main.ts" />

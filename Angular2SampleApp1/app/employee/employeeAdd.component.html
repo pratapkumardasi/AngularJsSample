@@ -1,0 +1,36 @@
+﻿
+<div class="container">
+    <form #employeeForm="ngForm" novalidate>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="employeeFirstName" [ngModel]="employee.firstName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="employeeLastName" [ngModel]="employee.lastName" class="form-control" />
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="isFulltime" [ngModel]="employee.isFullTime" />Full Time
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="contractType" [ngModel]="employee.contractType" value="W2" /> W2
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="contractType" [ngModel]="employee.contractType" value="1099" /> 1099
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Language</label>
+            <select class="form-control">
+                <option *ngFor="let detail of languages">{{detail}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        model:{{employee|json}}
+           </form>
+</div>
