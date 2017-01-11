@@ -12,8 +12,17 @@ const core_1 = require('@angular/core');
 const employee_model_1 = require('./employee.model');
 let EmployeeComponent = class EmployeeComponent {
     constructor() {
-        this.employee = new employee_model_1.EmployeeModel("Dasi", "PratapKumar", true, "W2");
+        this.employee = new employee_model_1.EmployeeModel("Dasi", "PratapKumar", true, "W2", "default");
         this.languages = ["English", "Hindi", "Telugu"];
+    }
+    SaveButtonClick() {
+        //  alert('ok');
+    }
+    LanguageValidation(value) {
+        if (value === "default")
+            this.showErrorForLanguage = true;
+        else
+            this.showErrorForLanguage = false;
     }
 };
 EmployeeComponent = __decorate([
